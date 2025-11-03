@@ -6,7 +6,6 @@
 */
 
 input.onButtonPressed(Button.A, function () {
-
     // Red
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 0)
@@ -27,20 +26,20 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(1000)
 
 
-    // Yellow (Red + Green)
+    // (Red + Green)
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P15, 0)
     basic.pause(1000)
 
 
-    // Cyan (Green + Blue)
+    // (Green + Blue)
     pins.digitalWritePin(DigitalPin.P13, 0)
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.pause(1000)
 
-    // Magenta (Red + Blue)
+    // (Red + Blue)
     pins.digitalWritePin(DigitalPin.P13, 1)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 1)
